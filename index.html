@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+		<script src="script.js"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+		<!-- <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css"> -->
+		<title>Stupid Taiwanese Signs</title>
+		<style type="text/css">
+			html {
+				font-family: 'Noto Sans TC', sans-serif;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<header>
+			<h1>白癡標誌產生器</h1>
+		</header>
+		<div style="display:flex; flex-direction: row; width: 100%; height: 100%;">
+			<div style="width: 70%; height: 100%;">
+				<div style="margin: auto auto; width: 500px; height: 300px; padding:50px; color: white; white-space: pre-line" id="outer">
+					<div id="sign" style="margin: 0; text-align: center; border-radius: 10px; border: 10px solid white; background-color: red; outline: 10px solid red; word-break: break-all; word-wrap: break-word;">此處禁止
+					發生車禍</div>
+				</div>
+			</div>
+			<div style="width: 30%; height: 100%; background-color: #eee; padding: 30px; border-radius:10px; font-size: 2em">
+				<form id="form">
+					<label for="out-width">寬: 300px</label>
+					<br>
+					<input type="range" id="out-width" name="out-width" min="200" max="1000">
+					<br>
+					<label for="out-height">高: 500px</label>
+					<br>
+					<input type="range" id="out-height" name="out-height" min="200" max="800">
+					<br>
+					顏色: 
+					<select name="color" id="color">
+						<option value="red">紅</option>
+						<option value="orange">黃</option>
+						<option value="navy">藍</option>
+						<option value="darkgreen">綠</option>
+					</select>
+					<br>
+					<textarea name="content" id="content">此處禁止&#13;發生車禍</textarea>
+					<!-- <input type="text" name="made by" id="madeby"> -->
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
